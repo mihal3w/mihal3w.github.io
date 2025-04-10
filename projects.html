@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проекти | Димитър Михалев</title>
+  <meta name="description" content="Лично портфолио на Димитър Михалев - IT специалист">
+  <meta name="keywords" content="портфолио, уеб разработка, IT, Windows, Linux, Python, киберсигурност">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+        <span class="logo-text">mihal3w</span>
+        <span class="logo-cursor">|</span>
+      </a>
+    <button class="mobile-menu-toggle">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Начало</a></li>
+      <li><a href="about.html">За мен</a></li>
+      <li><a href="projects.html" class="active">Проекти</a></li>
+      <li><a href="contact.html">Контакти</a></li>
+    </ul>
+    <button class="theme-toggle">
+      <span class="theme-icon">🌙</span>
+      <span class="theme-text">Dark</span>
+    </button>
+  </nav>
+
+  <main>
+    <section class="projects-section">
+      <h1 class="section-title">Моите <span class="highlight">проекти</span></h1>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">Всички</button>
+        <button class="filter-btn" data-filter="web">Уеб разработка</button>
+        <button class="filter-btn" data-filter="cyber">Киберсигурност</button>
+        <button class="filter-btn" data-filter="other">Други</button>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="images/portfoliosite.jpg" alt="Портфолио сайт">
+          </div>
+          <div class="project-content">
+            <h3>Портфолио сайт</h3>
+            <p>Личен уебсайт с тъмна/светла тема, анимации и responsive дизайн.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://mihal3w.github.io" target="_blank" rel="noopener noreferrer" class="project-link">Виж повече <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="cyber">
+          <div class="project-image">
+            <img src="images/mixedscanner.png"alt="Комбиниран мрежов скенер">
+          </div>
+          <div class="project-content">
+            <h3>Комбиниран мрежов скенер</h3>
+            <p>Графичен инструмент за цялостно сканиране на вътрешни/външни мрежи с автоматично откриване на уязвимости.</p>
+            <div class="project-tech">
+              <span>Kali Linux</span>
+              <span>Python</span>
+              <span>Nmap</span>
+              <span>Nuclei</span>
+              <span>CrackMapExec</span>
+            </div>
+            <a href="https://github.com/mihal3w/Combined-Network-Scanner-Tool.git" target="_blank" rel="noopener noreferrer" class="project-link">Виж повече <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="other">
+          <div class="project-image">
+            <img src="images/javaproject.png" alt="Java приложение">
+          </div>
+          <div class="project-content">
+            <h3>Система за управление на компютърни части</h3>
+            <p>Java-базирано десктоп приложение за управление на инвентар от компютърни части, клиенти и служители. Разработено като проект по университетски курс.</p>
+            <div class="project-tech">
+              <span>Java SE</span>
+              <span>SQLite</span>
+              <span>NetBeans IDE</span>
+            </div>
+            <a href="https://github.com/mihal3w/Computer-Parts-Management-System-.git" target="_blank" rel="noopener noreferrer" class="project-link">Виж повече <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="other">
+          <div class="project-image">
+            <img src="images/ipcalc.png" alt="IP калкулатор">
+          </div>
+          <div class="project-content">
+            <h3>IP калкулатор</h3>
+            <p>Приложение с графичен интерфейс, което позволява изчисления върху IP адреси, подмрежи, хостове, broadcast адреси, и автоматично разпределение на IP мрежа между различни места/офиси..</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Tkinter</span>
+              <span>ttk</span>
+            </div>
+            <a href="https://github.com/mihal3w/IP-calculator.git" target="_blank" rel="noopener noreferrer" class="project-link">Виж повече <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+        <div class="social-links">
+            <a href="https://github.com/mihal3w" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dimitar-mihalev-2166b0343/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/mihal3w/" target="_blank" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/d.mihalev/" target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:mihal3w@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+      <p>&copy; 2025 Димитър Михалев. Всички права запазени.</p>
+      <a href="privacy-policy.html" target="_blank" rel="noopener noreferrer" style="
+  display: inline-flex;
+  align-items: center;
+  color: #4361ee;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 20px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: rgba(67, 97, 238, 0.08);
+">
+  <i class="fas fa-user-shield" style="
+    margin-right: 6px;
+    font-size: 13px;
+    transition: transform 0.3s ease;
+  "></i>
+  Политика за поверителност
+</a>
+      <!-- <p class="phone">+359 878 152 602</p> -->
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

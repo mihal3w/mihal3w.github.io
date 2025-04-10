@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти | Димитър Михалев</title>
+  <meta name="description" content="Лично портфолио на Димитър Михалев - IT специалист">
+  <meta name="keywords" content="портфолио, уеб разработка, IT, Windows, Linux, Python, киберсигурност">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Навигацията остава същата -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+        <span class="logo-text">mihal3w</span>
+        <span class="logo-cursor">|</span>
+      </a>
+    <button class="mobile-menu-toggle">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Начало</a></li>
+      <li><a href="about.html">За мен</a></li>
+      <li><a href="projects.html">Проекти</a></li>
+      <li><a href="contact.html" class="active">Контакти</a></li>
+    </ul>
+    <button class="theme-toggle">
+      <span class="theme-icon">🌙</span>
+      <span class="theme-text">Dark</span>
+    </button>
+  </nav>
+
+  <main>
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h1 class="section-title">Свържи се с <span class="highlight">мен</span></h1>
+          <p>Ако имате въпроси или предложения, не се колебайте да се свържете с мен.</p>
+          
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Имейл</h3>
+              <a href="mailto:mihal3w@gmail.com">mihal3w@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Телефон</h3>
+              <a href="tel:+359878152602">+359 878 152 602</a>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Локация</h3>
+              <p>Гр. Варна, България</p>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://github.com/mihal3w" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dimitar-mihalev-2166b0343/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/mihal3w/" target="_blank" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/d.mihalev/" target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <!-- Променена форма за Formspree -->
+          <form id="contactForm" action="https://formspree.io/f/xjkyjyny" method="POST">
+            <div class="form-group">
+              <label for="name">Име</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Имейл</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Тема</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Съобщение</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <!-- Добавен скрит input за препращане след успешно изпращане -->
+            <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> -->
+            
+            <button type="submit" class="btn btn-primary">
+              <span class="btn-text">Изпрати съобщение</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://github.com/mihal3w" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/dimitar-mihalev-2166b0343/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/mihal3w/" target="_blank" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/d.mihalev/" target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:mihal3w@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Димитър Михалев. Всички права запазени.</p>
+      <a href="privacy-policy.html" target="_blank" rel="noopener noreferrer" style="
+  display: inline-flex;
+  align-items: center;
+  color: #4361ee;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 20px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: rgba(67, 97, 238, 0.08);
+">
+  <i class="fas fa-user-shield" style="
+    margin-right: 6px;
+    font-size: 13px;
+    transition: transform 0.3s ease;
+  "></i>
+  Политика за поверителност
+</a>
+      <p class="phone">Телефон: +359 878 152 602</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  
+  <!-- Добавен JavaScript за обработка на Formspree -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const btnText = submitBtn.querySelector('.btn-text');
+      const btnIcon = submitBtn.querySelector('i');
+      
+      // Промяна на състоянието на бутона
+      submitBtn.disabled = true;
+      btnText.textContent = "Изпраща се...";
+      btnIcon.classList.replace("fa-paper-plane", "fa-spinner", "fa-spin");
+      
+      // Изпращане на формата
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          btnText.textContent = "Успешно изпратено!";
+          btnIcon.classList.replace("fa-spinner", "fa-check");
+          form.reset();
+        } else {
+          throw new Error('Грешка при изпращане');
+        }
+      })
+      .catch(error => {
+        btnText.textContent = "Грешка! Опитайте отново";
+        btnIcon.classList.replace("fa-spinner", "fa-exclamation-circle");
+        console.error('Error:', error);
+      })
+      .finally(() => {
+        setTimeout(() => {
+          btnText.textContent = "Изпрати съобщение";
+          btnIcon.classList.replace("fa-check", "fa-paper-plane");
+          btnIcon.classList.replace("fa-exclamation-circle", "fa-paper-plane");
+          submitBtn.disabled = false;
+        }, 3000);
+      });
+    });
+  </script>
+</body>
+</html>
